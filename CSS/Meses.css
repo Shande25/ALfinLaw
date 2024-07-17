@@ -1,15 +1,22 @@
 body {
     font-family: Arial, sans-serif;
     padding: 20px;
-    background-color: #f5f5f5; /* Fondo principal */
+    background-color: #ffffff; /* Fondo principal */
 }
+.navbar-brand img {
+  max-width: 50px; /* Ajusta el ancho máximo del logo */
+  height: auto;
+  position: static;
+  margin-right: 20px; /* Espacio a la derecha del logo */
+}
+
 
 .titulo {
     text-align: center;
     font-size: 50px;
     margin-top: 20px; /* Aumentado el margen superior */
     text-decoration: underline;
-    color: #6d97c7; /* Color de texto */
+    color: #000000; /* Color de texto */
 }
 
 .text {
@@ -20,7 +27,7 @@ body {
     margin: 20px auto;
     max-width: 800px; /* Ajustado el ancho máximo del texto */
     padding: 0 20px;
-    color: #333; /* Color de texto */
+    color: #000000; /* Color de texto */
 }
 
 .flex-container {
@@ -33,7 +40,7 @@ body {
 .box {
     width: 200px;
     padding: 20px;
-    background-color: #ffffff; /* Fondo de las cajas */
+    background-color: #B1AFFF; /* Fondo de las cajas */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
     transition: transform 0.3s ease;
@@ -56,10 +63,83 @@ body {
 .box-title {
     font-size: 1.2em;
     margin-bottom: 5px; /* Margen inferior del título */
-    color: #6d97c7; /* Color del título */
+    color: #00438f; /* Color del título */
 }
 
 .box-description {
     font-size: 0.9em; /* Tamaño del texto de descripción */
-    color: #666; /* Color del texto de descripción */
+    color: #000000; /* Color del texto de descripción */
 }
+.navbar {
+    background-color: #B1AFFF!important; /* Ajusta el valor alpha (0.9) según tu preferencia */
+    border-radius: 20px;
+    padding: 0.5rem 2rem;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 10);
+    border-radius: 50px; 
+  }
+  .navbar .navbar-brand {
+    color: #ffffff !important; /* Color blanco para el texto */
+  }
+  
+  
+  .navbar .navbar-nav .nav-link {
+    color: #ffffff !important;
+  }
+  .navbar .navbar-brand:hover {
+    color: rgb(0, 0, 0) !important; /* Color azul claro al pasar el mouse */
+  }
+  
+  
+  .navbar .navbar-nav .nav-link:hover {
+    color: rgb(0, 0, 0) !important;
+  }
+  
+  @media (max-width: 768px) {
+    .navbar .container {
+      max-width: 100%;
+    }
+  
+    .navbar .navbar-toggler {
+      display: block;
+    }
+  
+    .navbar .navbar-collapse {
+      display: none;
+      text-align: center;
+    }
+  
+    .navbar .navbar-collapse.show {
+      display: block;
+    }
+  
+    .navbar .navbar-nav {
+      width: 100%;
+      display: block;
+      border-top: 1px solid #eee;
+      margin-top: 1rem;
+    }
+  
+    .navbar .navbar-nav .nav-item {
+      border-bottom: 1px solid #eceef3;
+    }
+  }
+  .dropdown-menu {
+    background-color: rgba(180, 105, 230, 0.8); /* Morado semi-transparente */
+    border: none; /* Quitamos el borde */
+  }
+  
+  .dropdown-menu a.dropdown-item {
+    color: #ffffff; /* Color de texto blanco */
+  }
+  
+  .dropdown-menu a.dropdown-item:hover {
+    background-color: rgba(0, 0, 0, 0.2); /* Cambio de color al pasar el mouse */
+  }
+  
+  .dropdown-divider {
+    background-color: #ffffff; /* Color de las divisiones */
+  }
+  
+  .dropdown-menu .dropdown-divider:last-child {
+    display: none; /* Ocultar última línea de división */
+  }

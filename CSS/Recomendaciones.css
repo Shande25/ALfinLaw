@@ -1,0 +1,141 @@
+.navbar-brand img {
+  max-width: 60px; 
+  height: auto;
+  position: relative;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #ffffff;
+  color: #000000;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 32px; /* Tamaño más grande para el título */
+  color: #B1AFFF; /* Color de título llamativo */
+  margin-bottom: 30px; /* Mayor espacio inferior */
+  margin-top: 20px; /* Ajuste de margen superior */
+}
+
+.recommendations {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 20px;
+}
+
+.recommendation {
+  position: relative;
+  width: 300px;
+  max-width: calc(33.33% - 20px);
+  cursor: pointer;
+  perspective: 1000px;
+  transition: transform 0.5s ease;
+  margin-bottom: 20px;
+  text-align: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  overflow: hidden;
+}
+
+.recommendation img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+  border-radius: 10px;
+  transition: opacity 0.3s ease, transform 0.5s ease;
+}
+
+.recommendation:hover .overlay {
+  opacity: 1;
+  transform: rotateY(0deg);
+}
+
+.overlay-text {
+  text-align: center;
+  padding: 20px;
+  color: white;
+}
+
+.overlay-text h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.overlay-text p {
+  margin-bottom: 0;
+  font-size: 14px;
+}
+.navbar {
+  background-color: #B1AFFF !important; /* Color de fondo rgba con transparencia */
+  padding: 0.5rem 2rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 10);
+  border-radius: 50px; 
+}
+
+.navbar .navbar-brand {
+  color: #ffffff !important; /* Color blanco para el texto */
+}
+
+.navbar .navbar-nav .nav-link {
+  color: #ffffff !important;
+}
+
+.navbar .navbar-brand:hover,
+.navbar .navbar-nav .nav-link:hover {
+  color: rgb(0, 0, 0) !important; /* Cambio de color al pasar el mouse */
+}
+
+@media (max-width: 768px) {
+  .navbar .container {
+    max-width: 100%;
+  }
+
+  .navbar .navbar-toggler {
+    display: block;
+  }
+
+  .navbar .navbar-collapse {
+    display: none;
+    text-align: center;
+  }
+
+  .navbar .navbar-collapse.show {
+    display: block;
+  }
+
+  .navbar .navbar-nav {
+    width: 100%;
+    display: block;
+    border-top: 1px solid #eee;
+    margin-top: 1rem;
+  }
+
+  .navbar .navbar-nav .nav-item {
+    border-bottom: 1px solid #eceef3;
+  }
+}

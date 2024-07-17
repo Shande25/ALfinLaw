@@ -1,5 +1,9 @@
 /* styles.css */
-
+.navbar-brand img {
+    max-width: 60px; 
+    height: auto;
+    position: relative; 
+  }
 body {
     font-family: 'Helvetica Neue', Arial, sans-serif;
     margin: 0;
@@ -9,7 +13,7 @@ body {
 }
 
 header {
-    background-color: #6C63FF; /* Fondo morado */
+    background-color: #fafafa; /* Fondo morado */
     color: white; /* Texto blanco */
     text-align: center;
     padding: 2rem 0;
@@ -77,3 +81,52 @@ footer {
     width: 100%;
     bottom: 0;
 }
+.navbar {
+    background-color: #B1AFFF    !important; /* Color de fondo rgba con transparencia */
+    border-radius: 50px;
+    padding: 0.5rem 2rem;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 10);
+  }
+
+  .navbar .navbar-brand {
+    color: #ffffff !important; /* Color blanco para el texto */
+  }
+
+  .navbar .navbar-nav .nav-link {
+    color: #ffffff !important;
+  }
+
+  .navbar .navbar-brand:hover,
+  .navbar .navbar-nav .nav-link:hover {
+    color: rgb(0, 0, 0) !important; /* Cambio de color al pasar el mouse */
+  }
+
+  @media (max-width: 768px) {
+    .navbar .container {
+      max-width: 100%;
+    }
+
+    .navbar .navbar-toggler {
+      display: block;
+    }
+
+    .navbar .navbar-collapse {
+      display: none;
+      text-align: center;
+    }
+
+    .navbar .navbar-collapse.show {
+      display: block;
+    }
+
+    .navbar .navbar-nav {
+      width: 100%;
+      display: block;
+      border-top: 1px solid #eee;
+      margin-top: 1rem;
+    }
+
+    .navbar .navbar-nav .nav-item {
+      border-bottom: 1px solid #eceef3;
+    }
+  } 

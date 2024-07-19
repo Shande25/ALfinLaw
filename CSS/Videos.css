@@ -128,8 +128,9 @@ html, body {
 
 /* Gallery Styles */
 .gallery {
-  background: #f2f2f2;
+  background: #eed4d4;
   padding: 40px 0;
+  border-radius: 30px;
 }
 
 .contenedor-galeria {
@@ -140,7 +141,7 @@ html, body {
 }
 
 .video-container {
-  width: calc(25% - 40px); /* Ajusta el ancho para que quepan cuatro videos en una línea */
+  width: calc(50% - 20px); /* Ajusta el ancho para que quepan dos videos en una línea, o ajusta el valor según el diseño deseado */
   margin-bottom: 20px;
   text-align: center;
 }
@@ -153,10 +154,31 @@ html, body {
 
 .video-galeria {
   width: 100%;
-  height: auto;
+  height: 315px; /* Ajusta la altura según tus necesidades */
   box-shadow: 0 0 6px rgba(0, 0, 0, .6);
   display: block;
   margin-bottom: 15px;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 800px) {
+  .video-container {
+      width: calc(50% - 10px); /* Ajusta el ancho para pantallas medianas */
+  }
+
+  .video-galeria {
+      height: 250px; /* Ajusta la altura para pantallas medianas */
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .video-container {
+      width: 100%; /* Ancho completo para pantallas pequeñas */
+  }
+
+  .video-galeria {
+      height: 200px; /* Ajusta la altura para pantallas pequeñas */
+  }
 }
 
 /* Footer Styles */

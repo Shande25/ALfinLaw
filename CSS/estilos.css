@@ -21,16 +21,15 @@ body{
     padding: 60px 0;
 }
 
-.header{
-    height: 100vh;
-    /* 02 */
-    background-image: linear-gradient(to top, rgba(251, 194, 235, 0.486) 0%, hsla(218, 68%, 79%, 0.514) 100%), url(https://picsum.photos/200/300);
+.header {
+    background-image: url('img/wasiguaguaa.png');
+    background-size: 50% 100px; /* Ajusta el ancho al 100% y la altura a 300px */
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    height: 400px; /* Ajusta la altura del contenedor si es necesario */
+    width: 70%; /* Ajusta el ancho del contenedor si es necesario */
     
 }
-
 .head{
     padding: 0;
     height: 100%;
@@ -57,7 +56,7 @@ body{
 .menu-navegacion{
     position: fixed;
     top: 0;
-    width: 30vw;
+    width: 20vw;
     height: 100%;
     /* background-image: linear-gradient(to top, #fbc2eb 0%, #a6c0ee 100%); */
     /* 02 */
@@ -226,66 +225,70 @@ body{
     font-weight: 400;
 }
 
-footer{
+footer {
     background: #9f8ad0;
-    padding-bottom: 0.1px;
+    padding: 1px 0; /* Reducido el padding superior e inferior */
+    margin: 0; /* Eliminado el margen inferior */
 }
 
-.footer-content{
+.footer-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    padding-top: 60px;
-    padding-bottom: 40px;
+    padding: 10px 0; /* Reducido el padding superior e inferior */
 }
 
-
-.contact-us{
+.contact-us {
     width: 40%;
     color: #fff;
+    text-align: center; /* Centrando el texto */
 }
 
-.brand{
+.brand {
     font-weight: 500;
-    font-size: 40px;
+    font-size: 30px; /* Reducido el tamaño de la fuente */
 }
 
-.brand+p{
+.brand + p {
     font-weight: 500;
 }
 
-.social-media{
+.social-media {
     width: 50%;
     display: flex;
     justify-content: flex-end;
 }
 
-.social-media-icon{
+.social-media-icon {
     display: inline-block;
-    margin-left: 20px;
-    width: 60px;
-    height: 60px;
+    margin-left: 15px; /* Reducido el margen izquierdo */
+    width: 40px; /* Reducido el tamaño */
+    height: 40px; /* Reducido el tamaño */
     border: 1px solid #fff;
     border-radius: 50%;
     text-align: center;
     color: #fff;
 }
 
-.social-media-icon i{
-    font-size: 30px;
-    line-height: 60px;
+.social-media-icon i {
+    font-size: 20px; /* Reducido el tamaño del ícono */
+    line-height: 40px; /* Alineado con el tamaño del contenedor */
 }
 
-.line{
+.social-media-icon:hover {
+    background: #fff;
+    color: #764ba2;
+}
+
+.line {
     width: 90%;
     max-width: 1200px;
     margin: auto;
-    height: 2px;
+    height: 1px; /* Reducido el grosor de la línea */
     background: #fff;
-    margin-bottom: 60px;
+    margin-bottom: 30px; /* Reducido el margen inferior */
 }
-
 .social-media-icon:hover{
     background: #fff;
     color:#764ba2;
@@ -389,4 +392,121 @@ footer{
         margin-bottom: 40px;
     }
     
+}
+.contenido-debajo {
+    background-color: #9f8ad0;
+    color: #000000;
+    padding: 40px;
+    margin-top: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(8, 193, 240, 0.1);
+    /* Añadido padding-bottom para más espacio debajo del párrafo */
+    padding-bottom: 60px;
+}
+
+.custom-row {
+    background-color: #BBE9FF;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(115, 15, 209, 0.1);
+    /* Añadido padding-bottom para asegurar espacio extra */
+    padding-bottom: 60px;
+}
+
+.custom-row .col-md-6, .custom-row .col-lg-3 {
+    flex: 1;
+    max-width: calc(25% - 20px); /* Ajusta el ancho para que quepan 4 imágenes */
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center; /* Alinea verticalmente el contenido */
+    justify-content: center; /* Centra horizontalmente el contenido */
+}
+
+.custom-row .image-text-container {
+    display: flex;
+    align-items: center;
+    text-align: center; /* Opcional, centra el texto dentro del contenedor */
+}
+
+.custom-row .image-text-container img {
+    width: 120px; /* Tamaño mediano de la imagen */
+    height: 120px; /* Tamaño mediano de la imagen */
+    border-radius: 50%; /* Hace la imagen circular */
+    object-fit: cover; /* Mantiene la proporción y recorta la imagen si es necesario */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Agrega una sombra sutil */
+    margin-right: 20px; /* Espacio entre la imagen y el texto */
+}
+
+.custom-row .text-container {
+    flex: 1;
+    /* Puedes agregar otros estilos para el texto aquí si lo deseas */
+}
+
+/* Ajustes para pantallas más pequeñas */
+@media screen and (max-width: 768px) {
+    .custom-row .col-md-6, .custom-row .col-lg-3 {
+        max-width: calc(50% - 20px); /* Dos imágenes por fila en pantallas medianas */
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .custom-row .col-md-6, .custom-row .col-lg-3 {
+        max-width: calc(100% - 20px); /* Una imagen por fila en pantallas pequeñas */
+    }
+}
+
+.image-text-container {
+    display: flex;
+    flex-direction: column; /* Asegura que el texto esté debajo de la imagen */
+    align-items: center; /* Centra el contenido horizontalmente */
+    text-align: center; /* Centra el texto */
+}
+
+.image-text-container img {
+    width: 120px; /* Tamaño mediano de la imagen */
+    height: 120px; /* Tamaño mediano de la imagen */
+    border-radius: 50%; /* Hace la imagen circular */
+    object-fit: cover; /* Mantiene la proporción y recorta la imagen si es necesario */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Agrega una sombra sutil */
+    margin-bottom: 10px; /* Espacio entre la imagen y el texto */
+}
+
+.text-container {
+    flex: 1;
+}
+
+.image-text-container-bb {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.image-text-container-bb img {
+    width: 50%; /* Ajusta el tamaño según sea necesario */
+    max-width: 800px; /* Tamaño máximo para mantener la calidad */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 10px; /* Bordes redondeados */
+    margin-right: 20px; /* Espacio entre la imagen y el texto */
+}
+
+.text-container {
+    flex: 1; /* Ocupa el espacio restante */
+}
+
+.text-container p {
+    font-size: 16px;
+    color: #333;
+}
+.text-container{
+    width: 100px;;
 }

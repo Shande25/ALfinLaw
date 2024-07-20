@@ -26,7 +26,7 @@ body{
     background-size: 50% 100px; /* Ajusta el ancho al 100% y la altura a 300px */
     background-repeat: no-repeat;
     background-position: center;
-    height: 400px; /* Ajusta la altura del contenedor si es necesario */
+    height: 300px; /* Ajusta la altura del contenedor si es necesario */
     width: 70%; /* Ajusta el ancho del contenedor si es necesario */
     
 }

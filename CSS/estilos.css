@@ -44,7 +44,7 @@ body{
 .hamburguer{
     position: fixed;
     top: 30px;
-    right: 30px;
+    right: 10px;
     background: #fff;
     width: 40px;
     height: 40px;
@@ -56,7 +56,7 @@ body{
 .menu-navegacion{
     position: fixed;
     top: 0;
-    width: 20vw;
+    width: 10vw;
     height: 100%;
     /* background-image: linear-gradient(to top, #fbc2eb 0%, #a6c0ee 100%); */
     /* 02 */
@@ -398,8 +398,8 @@ footer {
     color: #000000;
     padding: 40px;
     margin-top: 20px;
-    margin-left: 30px;
-    margin-right: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
     text-align: center;
     margin-top: 20px;
     border-radius: 10px;
@@ -409,48 +409,65 @@ footer {
 }
 
 .custom-row {
-    background-color: #BBE9FF;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-top: 20px;
-    margin-left: 10px;
-    margin-right: 10px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(115, 15, 209, 0.1);
-    /* Añadido padding-bottom para asegurar espacio extra */
+    margin: 10px 20px;
     padding-bottom: 60px;
 }
 
 .custom-row .col-md-6, .custom-row .col-lg-3 {
-    flex: 1;
     max-width: calc(25% - 20px); /* Ajusta el ancho para que quepan 4 imágenes */
     margin-bottom: 20px;
     display: flex;
-    align-items: center; /* Alinea verticalmente el contenido */
     justify-content: center; /* Centra horizontalmente el contenido */
 }
 
-.custom-row .image-text-container {
-    display: flex;
-    align-items: center;
-    text-align: center; /* Opcional, centra el texto dentro del contenedor */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none; /* Elimina el borde de la tarjeta */
+    border-radius: 15px; /* Esquinas redondeadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
 }
 
-.custom-row .image-text-container img {
+.card:hover {
+    transform: scale(1.05); /* Aumenta el tamaño de la tarjeta al hacer hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Aumenta la sombra al hacer hover */
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.card-title {
+    margin-bottom: 15px;
+    font-size: 1.25rem;
+    color: #6C63FF; /* Color del título */
+}
+
+.card-text {
+    flex: 1;
+    font-size: 1rem;
+    color: #333; /* Color del texto */
+    text-align: center; /* Centra el texto */
+}
+
+.card img {
     width: 120px; /* Tamaño mediano de la imagen */
     height: 120px; /* Tamaño mediano de la imagen */
     border-radius: 50%; /* Hace la imagen circular */
     object-fit: cover; /* Mantiene la proporción y recorta la imagen si es necesario */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Agrega una sombra sutil */
-    margin-right: 20px; /* Espacio entre la imagen y el texto */
+    margin-bottom: 20px; /* Espacio entre la imagen y el texto */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Agrega transición para el movimiento y la sombra */
 }
 
-.custom-row .text-container {
-    flex: 1;
-    /* Puedes agregar otros estilos para el texto aquí si lo deseas */
+.card img:hover {
+    transform: scale(1.1); /* Aumenta ligeramente el tamaño de la imagen al hacer hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Aumenta la sombra al hacer hover */
 }
-
 /* Ajustes para pantallas más pequeñas */
 @media screen and (max-width: 768px) {
     .custom-row .col-md-6, .custom-row .col-lg-3 {
@@ -487,8 +504,19 @@ footer {
 .image-text-container-bb {
     display: flex;
     align-items: center;
-    margin-bottom: 20px;
-    text-align: left;
+    margin: 20px auto; /* Centramos el contenedor y agregamos margen superior e inferior */
+    padding: 20px;
+    background-color: #f9f9f9; /* Fondo claro */
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transiciones para transformaciones y sombra */
+    max-width: 1500px; /* Ancho máximo del contenedor */
+    width: 93%; /* Ancho relativo para adaptarse a diferentes tamaños de pantalla */
+}
+
+.image-text-container-bb:hover {
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño al hacer hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Aumenta la sombra al hacer hover */
 }
 
 .image-text-container-bb img {
@@ -496,17 +524,29 @@ footer {
     max-width: 800px; /* Tamaño máximo para mantener la calidad */
     height: auto; /* Mantiene la proporción de la imagen */
     border-radius: 10px; /* Bordes redondeados */
-    margin-right: 20px; /* Espacio entre la imagen y el texto */
+    margin-right: 30px; /* Espacio entre la imagen y el texto aumentado */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Agrega transición para el movimiento y la sombra */
+}
+
+.image-text-container-bb img:hover {
+    transform: scale(1.1) rotate(3deg); /* Aumenta el tamaño y rota ligeramente la imagen al hacer hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Aumenta la sombra al hacer hover */
 }
 
 .text-container {
     flex: 1; /* Ocupa el espacio restante */
+    transition: color 0.3s ease, transform 0.3s ease; /* Transiciones para el color y las transformaciones */
+    text-align: justify; /* Justifica el texto */
+    padding-left: 10px; /* Añadido padding a la izquierda para mayor separación */
+}
+
+.text-container:hover {
+    color: #6C63FF; /* Cambia el color del texto al hacer hover */
+    transform: translateY(-5px); /* Mueve ligeramente el texto hacia arriba al hacer hover */
 }
 
 .text-container p {
-    font-size: 16px;
-    color: #333;
+    margin: 0; /* Elimina los márgenes predeterminados */
 }
-.text-container{
-    width: 100px;;
-}
+
+

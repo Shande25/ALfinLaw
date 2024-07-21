@@ -334,8 +334,13 @@ header {
 /* Footer */
 footer {
   background: #9f8ad0;
-  padding: -5px 0;
-  margin: 0;
+  padding: 1px 1px; /* Ajustado el padding superior e inferior */
+  margin: 0; /* Eliminado el margen inferior */
+  font-size: 15px; /* Tamaño de fuente reducido */
+  width: 100%; /* Asegurando que ocupe el ancho completo de la página */
+  bottom: 0;
+  left: 0;
+  
 }
 
 .footer-content {
@@ -343,18 +348,18 @@ footer {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  padding: 1px 0;
+  padding: 0 20px; /* Añadido padding lateral */
 }
 
 .contact-us {
   width: 40%;
   color: #fff;
-  text-align: center;
+  text-align: center; /* Centrando el texto */
 }
 
 .brand {
   font-weight: 500;
-  font-size: 30px;
+  font-size: 20px; /* Reducido el tamaño de la fuente */
 }
 
 .brand + p {
@@ -369,22 +374,59 @@ footer {
 
 .social-media-icon {
   display: inline-block;
-  margin-left: 15px;
-  width: 40px;
-  height: 40px;
+  margin-left: 15px; /* Reducido el margen izquierdo */
+  width: 30px; /* Reducido el tamaño */
+  height: 30px; /* Reducido el tamaño */
   border: 1px solid #fff;
   border-radius: 50%;
   text-align: center;
   color: #fff;
-  transition: background 0.3s, color 0.3s;
-}
-
-.social-media-icon:hover {
-  background-color: #fff;
-  color: #000;
 }
 
 .social-media-icon i {
-  line-height: 40px;
-  font-size: 20px;
+  font-size: 13px; /* Reducido el tamaño del ícono */
+  line-height: 30px; /* Alineado con el tamaño del contenedor */
+}
+
+.social-media-icon:hover {
+  background: #fff;
+  color: #764ba2;
+}
+
+.line {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  height: 1px; /* Reducido el grosor de la línea */
+  background: #fff;
+  margin-bottom: 15px; /* Reducido el margen inferior */
+}
+
+.social-media-icon:hover {
+  background: #fff;
+  color: #764ba2;
+}
+
+@media screen and (max-width: 800px) {
+  .footer-content {
+      justify-content: center;
+      padding: 10px 0;
+  }
+
+  .social-media {
+      width: 80%;
+      justify-content: space-evenly;
+  }
+
+  .social-media-icon {
+      margin-left: 0;
+      width: 40px;
+      height: 40px;
+  }
+
+  .contact-us {
+      text-align: center;
+      width: 80%;
+      margin-bottom: 20px;
+  }
 }

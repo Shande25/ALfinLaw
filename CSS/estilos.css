@@ -227,8 +227,9 @@ body{
 
 footer {
     background: #9f8ad0;
-    padding: 1px 0; /* Reducido el padding superior e inferior */
+    padding: 1px 1px; /* Reducido el padding superior e inferior */
     margin: 0; /* Eliminado el margen inferior */
+    font-size: 14px; /* Tamaño de fuente reducido */
 }
 
 .footer-content {
@@ -236,7 +237,7 @@ footer {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    padding: 10px 0; /* Reducido el padding superior e inferior */
+    padding: 1px 1px; /* Reducido el padding superior e inferior */
 }
 
 .contact-us {
@@ -247,7 +248,7 @@ footer {
 
 .brand {
     font-weight: 500;
-    font-size: 30px; /* Reducido el tamaño de la fuente */
+    font-size: 20px; /* Reducido el tamaño de la fuente */
 }
 
 .brand + p {
@@ -263,8 +264,8 @@ footer {
 .social-media-icon {
     display: inline-block;
     margin-left: 15px; /* Reducido el margen izquierdo */
-    width: 40px; /* Reducido el tamaño */
-    height: 40px; /* Reducido el tamaño */
+    width: 30px; /* Reducido el tamaño */
+    height: 30px; /* Reducido el tamaño */
     border: 1px solid #fff;
     border-radius: 50%;
     text-align: center;
@@ -272,8 +273,8 @@ footer {
 }
 
 .social-media-icon i {
-    font-size: 20px; /* Reducido el tamaño del ícono */
-    line-height: 40px; /* Alineado con el tamaño del contenedor */
+    font-size: 13px; /* Reducido el tamaño del ícono */
+    line-height: 30px; /* Alineado con el tamaño del contenedor */
 }
 
 .social-media-icon:hover {
@@ -287,7 +288,7 @@ footer {
     margin: auto;
     height: 1px; /* Reducido el grosor de la línea */
     background: #fff;
-    margin-bottom: 30px; /* Reducido el margen inferior */
+    margin-bottom: 15px; /* Reducido el margen inferior */
 }
 .social-media-icon:hover{
     background: #fff;

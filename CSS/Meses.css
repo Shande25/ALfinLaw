@@ -389,102 +389,101 @@ body {
     color: #a18cd1;
   }
   
-  footer {
-    background: #9f8ad0;
-    padding: 1px 1px; /* Ajustado el padding superior e inferior */
-    margin: 0; /* Eliminado el margen inferior */
-    font-size: 15px; /* Tamaño de fuente reducido */
-    width: 100%; /* Asegurando que ocupe el ancho completo de la página */
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    
+  /* Estilos del footer */
+footer {
+  background: #9f8ad0;
+  padding: 10px; /* Ajusta el padding general */
+  font-size: 15px; /* Tamaño de fuente reducido */
+  width: 100%; /* Asegura que ocupe el ancho completo de la página */
+  position: fixed;
+  bottom: 0;
+  left: 0;
 }
 
 .footer-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 0 20px; /* Añadido padding lateral */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0 20px; /* Padding lateral */
 }
 
 .contact-us {
-    width: 40%;
-    color: #fff;
-    text-align: center; /* Centrando el texto */
+  width: 40%;
+  color: #fff;
+  text-align: center; /* Centra el texto */
 }
 
 .brand {
-    font-weight: 500;
-    font-size: 20px; /* Reducido el tamaño de la fuente */
+  font-weight: 500;
+  font-size: 20px; /* Tamaño de fuente reducido */
 }
 
 .brand + p {
-    font-weight: 500;
+  font-weight: 500;
 }
 
 .social-media {
-    width: 50%;
-    display: flex;
-    justify-content: flex-end;
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .social-media-icon {
-    display: inline-block;
-    margin-left: 15px; /* Reducido el margen izquierdo */
-    width: 30px; /* Reducido el tamaño */
-    height: 30px; /* Reducido el tamaño */
-    border: 1px solid #fff;
-    border-radius: 50%;
-    text-align: center;
-    color: #fff;
+  display: inline-block;
+  margin-left: 15px; /* Margen izquierdo reducido */
+  width: 30px; /* Tamaño reducido */
+  height: 30px; /* Tamaño reducido */
+  border: 1px solid #fff;
+  border-radius: 50%;
+  text-align: center;
+  color: #fff;
 }
 
 .social-media-icon i {
-    font-size: 13px; /* Reducido el tamaño del ícono */
-    line-height: 30px; /* Alineado con el tamaño del contenedor */
+  font-size: 13px; /* Tamaño del ícono reducido */
+  line-height: 30px; /* Alineación con el tamaño del contenedor */
 }
 
 .social-media-icon:hover {
-    background: #fff;
-    color: #764ba2;
+  background: #fff;
+  color: #764ba2;
 }
 
 .line {
-    width: 90%;
-    max-width: 1200px;
-    margin: auto;
-    height: 1px; /* Reducido el grosor de la línea */
-    background: #fff;
-    margin-bottom: 15px; /* Reducido el margen inferior */
-}
-
-.social-media-icon:hover {
-    background: #fff;
-    color: #764ba2;
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  height: 1px; /* Grosor reducido de la línea */
+  background: #fff;
+  margin-bottom: 15px; /* Margen inferior reducido */
 }
 
 @media screen and (max-width: 800px) {
-    .footer-content {
-        justify-content: center;
-        padding: 10px 0;
-    }
+  footer {
+      padding: 10px 5px; /* Reduce el padding en pantallas más pequeñas */
+  }
 
-    .social-media {
-        width: 80%;
-        justify-content: space-evenly;
-    }
+  .footer-content {
+      flex-direction: column; /* Apila los elementos verticalmente */
+      align-items: center; /* Centra los elementos horizontalmente */
+      padding: 10px 0; /* Ajusta el padding para pantallas pequeñas */
+  }
 
-    .social-media-icon {
-        margin-left: 0;
-        width: 40px;
-        height: 40px;
-    }
+  .contact-us {
+      width: 100%; /* Ocupa el ancho completo del contenedor */
+      margin-bottom: 10px; /* Añade espacio debajo del bloque de contacto */
+  }
 
-    .contact-us {
-        text-align: center;
-        width: 80%;
-        margin-bottom: 20px;
-    }
+  .social-media {
+      width: 100%; /* Ocupa el ancho completo del contenedor */
+      justify-content: center; /* Centra los íconos sociales */
+      margin-bottom: 10px; /* Añade espacio debajo de los íconos sociales */
+  }
+
+  .social-media-icon {
+      margin-left: 10px; /* Margen izquierdo reducido para una mejor visualización */
+      width: 40px; /* Tamaño ajustado */
+      height: 40px; /* Tamaño ajustado */
+  }
 }

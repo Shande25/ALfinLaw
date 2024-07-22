@@ -57,6 +57,8 @@
 }
 
 .carousel-container {
+  position: relative; /* Asegura que el carrusel esté en la capa correcta */
+  z-index: 1;
   max-width: 600px;
   margin: auto;
   margin-top: 20px;
@@ -230,7 +232,7 @@ body {
 }
 
 .menu-navegacion {
-  position: fixed;
+  position: fixed; /* Asegura que el menú permanezca en su lugar */
   top: 0;
   width: 15vw;
   height: 100%;
@@ -243,6 +245,7 @@ body {
   transform: translateX(110%);
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease; /* Transiciones */
   box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+  z-index: 1050; /* Asegúrate de que esté por encima del carrusel */
 }
 
 .menu-navegacion.spread {

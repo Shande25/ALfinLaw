@@ -860,7 +860,7 @@ section {
   width: 100%;
   height: 200px; /* Altura uniforme para todas las imágenes */
   object-fit: cover; /* Asegura que la imagen cubra el área sin distorsión */
-  margin-bottom: 20px;
+  margin-bottom: 05px;
 }
 
 .why-us .box h4 {
